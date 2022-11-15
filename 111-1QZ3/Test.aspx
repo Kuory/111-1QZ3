@@ -15,7 +15,7 @@
             <asp:TextBox ID="tb_Num" runat="server"></asp:TextBox>
             <br/>
             聯絡方式:
-            <asp:RadioButtonList ID="rbl_Phone" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow" OnSelectedIndexChanged="rbl_Phone_SelectedIndexChanged">
+            <asp:RadioButtonList ID="rbl_Phone" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
                 <asp:ListItem Text="手機" Selected="True"></asp:ListItem>
                 <asp:ListItem Text="市話"></asp:ListItem>
                 <asp:ListItem Text="無"></asp:ListItem>
@@ -24,7 +24,7 @@
             <br/>
             <br/>
             縣市與區域:
-            <asp:DropDownList ID="dpl_City" runat="server" OnSelectedIndexChanged="dpl_City_SelectedIndexChanged" ></asp:DropDownList>
+            <asp:DropDownList ID="dpl_City" runat="server" OnSelectedIndexChanged="dpl_City_SelectedIndexChanged" AutoPostBack="True" ></asp:DropDownList>
             <asp:DropDownList ID="dpl_Area" runat="server"></asp:DropDownList>
             <br/>
             <asp:Button ID="btn_Submit" runat="server" Text="送出" PostBackUrl="~/Test_Sub.aspx" Width="80px" />

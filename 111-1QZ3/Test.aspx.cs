@@ -28,17 +28,9 @@ namespace _111_1QZ3
                         dpl_City.Items.Add(a_C);
                     }
                 }
-                if (rbl_Phone.Text == "無")
-                {
-                    txt_Phone.Visible = false;
-                }
-                else
-                {
-                    txt_Phone.Visible = true; 
-                }
-                {
-                    mt_GenSecondList();
-                }
+                
+                
+                  mt_GenSecondList();
             }
         }
 
@@ -52,7 +44,7 @@ namespace _111_1QZ3
         {
             int i_ind = dpl_City.SelectedIndex;
             dpl_Area.Items.Clear();
-            for (int J = 0; J < s_Area.GetLength(0); J++)
+            for (int J = 0; J < s_Area.GetLength(1); J++)
             {
                 ListItem a_C = new ListItem();
                 a_C.Text = a_C.Value = s_Area[i_ind, J];
